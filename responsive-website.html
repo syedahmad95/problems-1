@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            border: 1px solid rebeccapurple;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        h1 {
+            font-size: 10vw;
+        }
+
+        .tiger img {
+            width: 100%;
+        }
+
+        .container-two {
+            display: flex;
+        }
+
+        .container-two .split {
+            width: 50%;
+        }
+
+        .split img {
+            width: 100%;
+        }
+
+        @media screen and (max-width:"576px") {
+            .container-two {
+                flex-direction: column-reverse;
+            }
+
+            .container-two .split {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>MY Responsive Website</h1>
+    </section>
+    <section class="tiger">
+        <h2>Tiger Vai</h2>
+        <img src="images/tiger.jpg" alt="">
+    </section>
+    <section>
+        <h2>Two Part</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/Food.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="images/tiger.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
